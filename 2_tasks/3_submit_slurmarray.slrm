@@ -1,0 +1,11 @@
+#!/bin/bash
+#SBATCH --job-name="process_file"
+#SBATCH --time=00:03:00
+#SBATCH --partition=shared
+#SBATCH --ntasks-per-node=1
+#SBATCH --array=7-12
+
+source activate py
+
+count=`printf %04d $SLURM_ARRAY_TASK_ID`
+python process_file.py files/data_$count.txt
