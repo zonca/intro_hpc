@@ -5,6 +5,7 @@
 
 * `module avail`
 * `module load anaconda`
+* check singularity
 * `conda create --name py --clone root`
 * `source activate py`
 * `conda remove conda-env`
