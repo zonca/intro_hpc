@@ -2,4 +2,5 @@
 
 hostname
 date
-sleep 3m
+cat /etc/*release
+sleep 1m
