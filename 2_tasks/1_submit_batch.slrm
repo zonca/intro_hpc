@@ -1,0 +1,7 @@
+#!/bin/bash
+#SBATCH --job-name="process_file"
+#SBATCH --time=00:03:00
+#SBATCH --partition=compute
+
+source activate py
+python process_file.py files/data_0000.txt
