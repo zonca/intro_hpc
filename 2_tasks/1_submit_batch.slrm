@@ -4,4 +4,4 @@
 #SBATCH --partition=compute
 
 source activate py
-python process_file.py files/data_0000.txt
+python process_file.py files/data_0001.txt
