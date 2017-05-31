@@ -1,0 +1,9 @@
+#!/bin/bash
+#SBATCH --job-name="process_file"
+#SBATCH --time=00:03:00
+#SBATCH --partition=shared
+#SBATCH --memory=1GB
+#SBATCH --ntasks-per-node=1
+
+source activate py
+python process_file.py files/data_0002.txt
