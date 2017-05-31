@@ -8,7 +8,7 @@ def analyze(input_filename):
 
     output_filename = filename.parent / "output" / ("out_" + filename.name)
 
-    sleep_minutes = 1
+    sleep_minutes = 0.5
     time.sleep(sleep_minutes * 60)
 
     print("Writing output file {}".format(output_filename))
