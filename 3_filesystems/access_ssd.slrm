@@ -10,7 +10,7 @@ do
 done
 
 
-tar czvf compressed_tiny_files.tgz $SSD_PATH
+tar czvf $SSD_PATH/compressed_tiny_files.tgz $SSD_PATH
 
 SCRATCH_PATH=/oasis/scratch/comet/$USER/temp_project
-cp compressed_tiny_files.tgz $SCRATCH_PATH
+cp $SSD_PATH/compressed_tiny_files.tgz $SCRATCH_PATH
