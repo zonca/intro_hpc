@@ -36,6 +36,6 @@ if __name__=='__main__':
     my_pi = estimate_pi(n_samples, executor)
     sizeof = np.dtype(np.float64).itemsize
 
-    print("[serial version] required memory {:.3f} MB".format(n_samples*sizeof*3/(1024*1024)))
-    print("[serial version] pi is {} from {} samples".format(my_pi,n_samples))
-    print("[serial version] got {} digits right".format(int(np.ceil(-np.log10(abs(my_pi - np.pi))))))
+    print("[multicore version] required memory {:.3f} MB".format(n_samples*sizeof*3/(1024*1024)))
+    print("[multicore version] pi is {} from {} samples".format(my_pi,n_samples))
+    print("[multicore version] got {} digits right".format(int(np.ceil(-np.log10(abs(my_pi - np.pi))))))
