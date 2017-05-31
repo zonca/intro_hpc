@@ -2,7 +2,7 @@
 #SBATCH --job-name="process_file"
 #SBATCH --time=00:03:00
 #SBATCH --partition=shared
-#SBATCH --memory=1GB
+#SBATCH --mem=1GB
 #SBATCH --ntasks-per-node=1
 
 source activate py
