@@ -1,0 +1,16 @@
+#!/bin/bash
+
+SSD_PATH=/scratch/$USER/$SLURM_JOB_ID/
+
+# legacy application creates a million tiny files
+
+for f in {00000..99999}
+do
+    touch $SSD_PATH/data_$f.txt
+done
+
+
+tar czvf compressed_tiny_files.tgz $SSD_PATH
+
+SCRATCH_PATH=/oasis/scratch/comet/$USER/temp_project
+cp compressed_tiny_files.tgz $SCRATCH_PATH
