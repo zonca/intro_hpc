@@ -1,0 +1,10 @@
+#!/bin/bash
+#SBATCH --job-name="process_file"
+#SBATCH --time=00:03:00
+#SBATCH --partition=compute
+
+source activate py
+for count in {0002..0006}
+do
+    python process_file.py files/data_$count.txt
+done
