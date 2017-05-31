@@ -10,4 +10,4 @@
 export MODULEPATH=/share/apps/compute/modulefiles/applications:$MODULEPATH
 module load anaconda
 
-ibrun --npernode=1 ~/.local/bin/dask-worker --scheduler-file ~/.dask_scheduler.json
+ibrun --npernode=1 dask-worker --scheduler-file ~/.dask_scheduler.json
