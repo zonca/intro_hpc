@@ -5,7 +5,7 @@
 
 * `module avail`
 * `module load anaconda`
-* check singularity
+* check singularity, more at <http://singularity.lbl.gov/quickstart>
 * `conda create --name py --clone root`
 * `source activate py`
 * `conda remove conda-env`
